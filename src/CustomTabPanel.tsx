@@ -6,13 +6,13 @@ import { CardProps as TabProps } from "./Card";
 function CustomTabPanel ({ title, description, buttonText, alertText, alertStatus }: TabProps) {
     return (
         <>
-            <Box h="100%" p={5} textAlign="left" borderTop="green">
+            <Box h="100%" p={{ base: 2, md: 5 }} textAlign="left" borderTop="green">
                 <Flex justifyContent="space-between" direction={{ base: "column", md: "row" }}>
-                    <Heading>{title}</Heading>
+                    <Heading size="xl">{title}</Heading>
                     <AiOutlineApi style={{ marginLeft: "8px" }} size={40} />
                 </Flex>
                 <Box h="auto" my={10} borderRadius={4} p={5} bgColor="white" borderTop="5px solid green">
-                    <Text fontSize={20}>{description}</Text>
+                    <Text fontSize={{ base: 12, sm: 16, md: 20 }}>{description}</Text>
                 </Box>
                     <Alert status={alertStatus}>
                         <AlertIcon />

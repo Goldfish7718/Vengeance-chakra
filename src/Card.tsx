@@ -1,5 +1,6 @@
 import { Alert, AlertIcon, AlertTitle, Button, Card, CardBody, CardFooter, CardHeader, Divider, Heading, Text } from "@chakra-ui/react"
 import { BsArrowRight, BsBoxArrowUpRight } from "react-icons/bs"
+import Animator from "./Animator"
 
 export type CardProps = {
     title: string,
@@ -12,7 +13,8 @@ export type CardProps = {
 
 function CustomCard ({ title, description, buttonText, alertText, alertStatus }: CardProps) {
     return (
-        <Card>
+      <Animator animation_type="vertical">
+        <Card h="100%">
             <CardHeader color="white" bgColor="green.500">
               <Heading fontSize={24}>{title}</Heading>
             </CardHeader>
@@ -29,6 +31,7 @@ function CustomCard ({ title, description, buttonText, alertText, alertStatus }:
               <Button>Read More <BsBoxArrowUpRight size={18} style={{ marginLeft: "8px" }} /></Button>
             </CardFooter>
         </Card>
+      </Animator>
     )
 }
 

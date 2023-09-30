@@ -27,7 +27,7 @@ function Navbar () {
     const isBelowMd = useBreakpointValue({ base: true, md: false })
 
     return (
-        <Flex bgColor="green.500" px={5} py={2} alignItems="center">
+        <Flex bgColor="green.500" px={5} py={2} alignItems="center" position="fixed" w="100vw" zIndex="1">
             <Text fontSize={{base: 20, md: 32}} fontWeight="700" color="white">Vengeance</Text>
             <ButtonGroup display={{base: "none", md: "block" }} isAttached mx={5} >
                 <Button><BsDiscord size={18} /></Button>

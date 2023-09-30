@@ -11,7 +11,8 @@ function Footer () {
             title: "Thanks! Your response has been submitted",
             description: "Come Back soon!",
             status: "success",
-            isClosable: true
+            isClosable: true,
+            duration: 10000
         })
     }
 
